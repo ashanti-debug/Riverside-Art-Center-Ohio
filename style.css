@@ -679,9 +679,9 @@ footer {
 /* COMMUNITY IMAGE */
 .artist-community-image {
     display: block;
-    width: 100%;
-    max-width: 1050px;
-    height: 350px;
+    width: 85%;
+    max-width: 750px;
+    height: 230px;
     object-fit: cover;
     border-radius: 10px;
     margin: 0 auto;
