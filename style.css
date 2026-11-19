@@ -1,681 +1,626 @@
 
-/* =========================================
-   RIVERSIDE ART CENTER - HOME PAGE DESIGN
-   ========================================= */
+/* RIVERSIDE ART CENTER HOME PAGE DESIGN */
 
 /* COLOR PALETTE */
 :root {
-    --pink-light: #F4DFE6;
-    --pink: #E0A3BB;
-    --blue-light: #D6E6E7;
-    --sage-light: #C5CC82;
-    --sage-dark: #97A13B;
-    --text-dark: #414141;
-    --white: #FFFFFF;
+  --pink-light: #F4DFE6;
+  --pink: #E0A3BB;
+  --blue-light: #D6E6E7;
+  --sage-light: #C5CC82;
+  --sage-dark: #97A13B;
+  --text-dark: #414141;
+  --white: #FFFFFF;
 }
 
 /* GENERAL PAGE SETTINGS */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    color: var(--text-dark);
-    background-color: var(--white);
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark);
+  background-color: var(--white);
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 .container-fluid {
-    width: 100%;
-    max-width: 1250px;
-    margin: 0 auto;
-    padding-left: 25px;
-    padding-right: 25px;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 a {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-
-/* =========================================
-   HEADER AND NAVIGATION
-   ========================================= */
-
-.header {
-    background-color: var(--pink-light);
-    width: 100%;
-    padding: 8px 0;
+/* HEADER AND NAVIGATION */
+header {
+  background-color: var(--pink-light);
+  width: 100%;
+  padding: 8px 0;
 }
 
 .header-inner {
-    min-height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /* LOGO */
 .logo-link {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .rac-logo {
-    width: 200px;
-    height: 100px;
-    object-fit: contain;
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
 }
 
 /* NAVIGATION */
 .main-nav .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-nav .nav-link {
-    display: block;
-    color: var(--text-dark);
-    font-size: 15px;
-    font-weight: 600;
-    padding: 12px 18px;
-    border-radius: 6px;
-    text-decoration: none;
+  display: block;
+  color: var(--text-dark);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .nav-item.active .nav-link {
-    color: var(--white);
-    background-color: var(--sage-dark);
+  color: var(--white);
+  background-color: var(--sage-dark);
 }
 
-
-/* =========================================
-   KOI FISH BANNER
-   ========================================= */
-
+/* KOI FISH BANNER */
 .koi-banner {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    background-color: var(--blue-light);
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  background-color: var(--blue-light);
 }
 
 .banner-image {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
-
-/* =========================================
-   MISSION STATEMENT
-   ========================================= */
-
+/* MISSION STATEMENT */
 .mission-section {
-    padding: 55px 0 45px;
-    text-align: center;
-    background-color: var(--white);
+  padding: 55px 0 45px;
+  text-align: center;
+  background-color: var(--white);
 }
 
 .section-heading {
-    color: var(--sage-dark);
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 0 0 25px;
+  color: var(--sage-dark);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 25px;
 }
 
 .mission-text {
-    max-width: 950px;
-    margin: 0 auto 30px;
-    font-size: 17px;
-    line-height: 1.9;
+  max-width: 950px;
+  margin: 0 auto 30px;
+  font-size: 17px;
+  line-height: 1.9;
 }
 
 .mission-image {
-    display: block;
-    width: 100%;
-    max-width: 1000px;
-    height: 350px;
-    object-fit: cover;
-    object-position: center;
-    margin: 0 auto;
-    border-radius: 8px;
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
-
-/* =========================================
-   FOUR CONTENT BOXES
-   ========================================= */
-
+/* FOUR CONTENT BOXES */
 .features-section {
-    padding: 65px 0 75px;
-    background-color: var(--blue-light);
+  padding: 65px 0 75px;
+  background-color: var(--blue-light);
 }
 
 .features-intro {
-    text-align: center;
-    font-size: 17px;
-    margin: 0 auto 40px;
+  text-align: center;
+  font-size: 17px;
+  margin: 0 auto 40px;
 }
 
 /* TWO BY TWO GRID */
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* INDIVIDUAL CARDS */
 .content-box {
-    background-color: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    max-width: none;
-    margin: 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: none;
+  margin: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .content-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 /* CARD IMAGES */
 .feature-image {
-    display: block;
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
 }
 
 /* CARD TEXT */
 .content-box-text {
-    padding: 25px 25px 30px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
+  padding: 25px 25px 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .content-box h3 {
-    color: var(--sage-dark);
-    font-size: 23px;
-    font-weight: 600;
-    margin: 0 0 15px;
+  color: var(--sage-dark);
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0 0 15px;
 }
 
 .content-box p {
-    font-size: 15px;
-    line-height: 1.8;
-    margin: 0 0 25px;
-    flex-grow: 1;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 25px;
+  flex-grow: 1;
 }
 
 /* READ MORE BUTTON */
 .read-more {
-    display: inline-block;
-    color: var(--white);
-    background-color: var(--pink);
-    border: none;
-    border-radius: 5px;
-    padding: 11px 28px;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--pink);
+  border: none;
+  border-radius: 5px;
+  padding: 11px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .read-more:hover,
 .read-more:focus {
-    color: var(--white);
-    background-color: var(--sage-dark);
-    text-decoration: none;
+  color: var(--white);
+  background-color: var(--sage-dark);
+  text-decoration: none;
 }
 
-
-/* =========================================
-   FOOTER
-   ========================================= */
-
-.footer {
-    background-color: var(--pink-light);
-    color: var(--text-dark);
-    padding: 50px 0 0;
-    font-size: 15px;
+/* FOOTER */
+footer {
+  background-color: var(--pink-light);
+  color: var(--text-dark);
+  padding: 50px 0 0;
+  font-size: 15px;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 30px;
-    padding-bottom: 35px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+  padding-bottom: 35px;
 }
 
 .footer-column h3 {
-    color: var(--sage-dark);
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 0 20px;
-    text-transform: uppercase;
+  color: var(--sage-dark);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 20px;
+  text-transform: uppercase;
 }
 
 .footer-column p {
-    line-height: 1.9;
-    margin-bottom: 15px;
+  line-height: 1.9;
+  margin-bottom: 15px;
 }
 
 .footer-column a {
-    color: var(--text-dark);
-    text-decoration: none;
-    overflow-wrap: anywhere;
+  color: var(--text-dark);
+  text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .footer-column a:hover {
-    color: var(--sage-dark);
-    text-decoration: underline;
+  color: var(--sage-dark);
+  text-decoration: underline;
 }
 
 .footer-subheading {
-    margin-top: 20px !important;
+  margin-top: 20px !important;
 }
 
 /* SOCIAL MEDIA ICONS */
 .social-icons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
 }
 
 .social-icons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icon {
-    width: 38px;
-    height: 38px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 /* COPYRIGHT */
 .copyright-col {
-    border-top: 1px solid var(--pink);
-    text-align: center;
-    padding: 20px 10px;
+  border-top: 1px solid var(--pink);
+  text-align: center;
+  padding: 20px 10px;
 }
 
 .copyright-text {
-    color: var(--text-dark);
-    font-size: 14px;
-    margin: 0;
+  color: var(--text-dark);
+  font-size: 14px;
+  margin: 0;
 }
 
-
-/* =========================================
-   TABLET RESPONSIVE DESIGN
-   ========================================= */
-
+/* TABLET RESPONSIVE DESIGN */
 @media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 0;
+  }
 
-    .header-inner {
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
-        padding: 10px 0;
-    }
+  .rac-logo {
+    width: 110px;
+    height: 60px;
+  }
 
-    .rac-logo {
-        width: 110px;
-        height: 60px;
-    }
+  .main-nav .navbar-nav {
+    justify-content: center;
+  }
 
-    .main-nav .navbar-nav {
-        justify-content: center;
-    }
+  .navbar-nav .nav-link {
+    padding: 10px 13px;
+  }
 
-    .navbar-nav .nav-link {
-        padding: 10px 13px;
-    }
-
-    .footer-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-
-/* =========================================
-   MOBILE RESPONSIVE DESIGN
-   ========================================= */
-
+/* MOBILE RESPONSIVE DESIGN */
 @media (max-width: 600px) {
+  .container-fluid {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 
-    .container-fluid {
-        padding-left: 18px;
-        padding-right: 18px;
-    }
+  /* HEADER */
+  .header-inner {
+    flex-direction: column;
+    gap: 8px;
+  }
 
-    /* HEADER */
-    .header-inner {
-        flex-direction: column;
-        gap: 8px;
-    }
+  .rac-logo {
+    width: 100px;
+    height: 55px;
+  }
 
-    .rac-logo {
-        width: 100px;
-        height: 55px;
-    }
+  .main-nav {
+    width: 100%;
+  }
 
-    .main-nav {
-        width: 100%;
-    }
+  .main-nav .navbar-nav {
+    justify-content: center;
+    gap: 3px;
+  }
 
-    .main-nav .navbar-nav {
-        justify-content: center;
-        gap: 3px;
-    }
+  .navbar-nav .nav-link {
+    font-size: 13px;
+    padding: 9px 10px;
+  }
 
-    .navbar-nav .nav-link {
-        font-size: 13px;
-        padding: 9px 10px;
-    }
+  /* BANNER */
+  .koi-banner {
+    height: 220px;
+  }
 
-    /* BANNER */
-    .koi-banner {
-        height: 220px;
-    }
+  /* MISSION */
+  .mission-section {
+    padding: 40px 0;
+  }
 
-    /* MISSION */
-    .mission-section {
-        padding: 40px 0;
-    }
+  .section-heading {
+    font-size: 24px;
+  }
 
-    .section-heading {
-        font-size: 24px;
-    }
+  .mission-text {
+    font-size: 15px;
+    line-height: 1.8;
+  }
 
-    .mission-text {
-        font-size: 15px;
-        line-height: 1.8;
-    }
+  .mission-image {
+    height: 230px;
+  }
 
-    .mission-image {
-        height: 230px;
-    }
+  /* CONTENT BOXES */
+  .features-section {
+    padding: 45px 0;
+  }
 
-    /* CONTENT BOXES */
-    .features-section {
-        padding: 45px 0;
-    }
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
+  .feature-image {
+    height: 210px;
+  }
 
-    .feature-image {
-        height: 210px;
-    }
+  .content-box-text {
+    padding: 20px;
+  }
 
-    .content-box-text {
-        padding: 20px;
-    }
+  /* FOOTER */
+  footer {
+    padding-top: 40px;
+  }
 
-    /* FOOTER */
-    .footer {
-        padding-top: 40px;
-    }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+  .footer-column {
+    text-align: center;
+  }
 
-    .footer-column {
-        text-align: center;
-    }
+  .social-icons {
+    justify-content: center;
+  }
 
-    .social-icons {
-        justify-content: center;
-    }
+  .copyright-text {
+    font-size: 12px;
+  }
+}
 
-    .copyright-text {
-        font-size: 12px;
-    }
-
-   
-/* =========================================
-   ABOUT PAGE - WELCOME SECTION
-   ========================================= */
-
+/* ABOUT PAGE WELCOME SECTION */
 .about-welcome-section {
-    padding: 55px 0 65px;
-    background-color: var(--white);
+  padding: 55px 0 65px;
+  background-color: var(--white);
 }
 
 .about-welcome-box {
-    max-width: 1050px;
-    margin: 0 auto 40px;
-    padding: 40px 45px;
-    background-color: var(--pink-light);
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  max-width: 1050px;
+  margin: 0 auto 40px;
+  padding: 40px 45px;
+  background-color: var(--pink-light);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
 }
 
 .about-welcome-box h2 {
-    color: var(--sage-dark);
-    font-size: 25px;
-    font-weight: 600;
-    margin: 0 0 20px;
+  color: var(--sage-dark);
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 20px;
 }
 
 .about-welcome-box p {
-    font-size: 16px;
-    line-height: 1.9;
-    margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 0 0 18px;
 }
 
 .about-welcome-box p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
 /* TWO ABOUT IMAGES */
-
 .about-image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px;
-    max-width: 1050px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .about-image {
-    display: block;
-    width: 100%;
-    height: 330px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-
-/* =========================================
-   MUSIC PARK SECTION
-   ========================================= */
-
+/* MUSIC PARK SECTION */
 .music-park-section {
-    padding: 65px 0 75px;
-    background-color: var(--blue-light);
+  padding: 65px 0 75px;
+  background-color: var(--blue-light);
 }
 
 .music-park-intro {
-    max-width: 1000px;
-    margin: 0 auto 40px;
-    text-align: center;
-    font-size: 17px;
-    line-height: 1.9;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.9;
 }
 
-
 /* THREE MUSIC PARK CARDS */
-
 .music-park-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
-    max-width: 1150px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .music-park-card {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .music-park-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .music-park-image {
-    display: block;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .music-park-card-text {
-    padding: 25px 20px;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 25px 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .music-park-card-text p {
-    font-size: 15px;
-    line-height: 1.8;
-    margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
 }
 
-
-/* =========================================
-   ABOUT PAGE RESPONSIVE DESIGN
-   ========================================= */
-
+/* ABOUT PAGE RESPONSIVE DESIGN */
 @media (max-width: 900px) {
+  .music-park-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .music-park-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .music-park-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 500px;
+    width: 100%;
+    justify-self: center;
+  }
 
-    .music-park-card:last-child {
-        grid-column: 1 / -1;
-        max-width: 500px;
-        width: 100%;
-        justify-self: center;
-    }
-
-    .about-image {
-        height: 280px;
-    }
+  .about-image {
+    height: 280px;
+  }
 }
-
 
 @media (max-width: 600px) {
+  .about-welcome-section {
+    padding: 40px 0;
+  }
 
-    .about-welcome-section {
-        padding: 40px 0;
-    }
+  .about-welcome-box {
+    padding: 25px 20px;
+  }
 
-    .about-welcome-box {
-        padding: 25px 20px;
-    }
+  .about-welcome-box h2 {
+    font-size: 21px;
+  }
 
-    .about-welcome-box h2 {
-        font-size: 21px;
-    }
+  .about-welcome-box p {
+    font-size: 15px;
+  }
 
-    .about-welcome-box p {
-        font-size: 15px;
-    }
+  .about-image-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-    .about-image-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+  .about-image {
+    height: 230px;
+  }
 
-    .about-image {
-        height: 230px;
-    }
+  .music-park-section {
+    padding: 45px 0;
+  }
 
-    .music-park-section {
-        padding: 45px 0;
-    }
+  .music-park-intro {
+    font-size: 15px;
+    line-height: 1.8;
+  }
 
-    .music-park-intro {
-        font-size: 15px;
-        line-height: 1.8;
-    }
+  .music-park-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 
-    .music-park-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
+  .music-park-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
 
-    .music-park-card:last-child {
-        grid-column: auto;
-        max-width: none;
-    }
+  .music-park-image {
+    height: 230px;
+  }
 
-    .music-park-image {
-        height: 230px;
-    }
-
-    .music-park-card-text {
-        padding: 22px;
-    }
-}
-
-
-}
+  .music-park-card-text {
+    padding: 22px;
+  }
