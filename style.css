@@ -475,4 +475,207 @@ a {
         font-size: 12px;
     }
 
+   
+/* =========================================
+   ABOUT PAGE - WELCOME SECTION
+   ========================================= */
+
+.about-welcome-section {
+    padding: 55px 0 65px;
+    background-color: var(--white);
+}
+
+.about-welcome-box {
+    max-width: 1050px;
+    margin: 0 auto 40px;
+    padding: 40px 45px;
+    background-color: var(--pink-light);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.about-welcome-box h2 {
+    color: var(--sage-dark);
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.about-welcome-box p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0 0 18px;
+}
+
+.about-welcome-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* TWO ABOUT IMAGES */
+
+.about-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   MUSIC PARK SECTION
+   ========================================= */
+
+.music-park-section {
+    padding: 65px 0 75px;
+    background-color: var(--blue-light);
+}
+
+.music-park-intro {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* THREE MUSIC PARK CARDS */
+
+.music-park-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.music-park-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-park-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.music-park-image {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.music-park-card-text {
+    padding: 25px 20px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-park-card-text p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   ABOUT PAGE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .music-park-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .music-park-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 500px;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .about-image {
+        height: 280px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .about-welcome-section {
+        padding: 40px 0;
+    }
+
+    .about-welcome-box {
+        padding: 25px 20px;
+    }
+
+    .about-welcome-box h2 {
+        font-size: 21px;
+    }
+
+    .about-welcome-box p {
+        font-size: 15px;
+    }
+
+    .about-image-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-image {
+        height: 230px;
+    }
+
+    .music-park-section {
+        padding: 45px 0;
+    }
+
+    .music-park-intro {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .music-park-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .music-park-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .music-park-image {
+        height: 230px;
+    }
+
+    .music-park-card-text {
+        padding: 22px;
+    }
+}
+
+
 }
