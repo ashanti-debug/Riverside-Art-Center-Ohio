@@ -1,310 +1,349 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Classic - Responsive Bootstrap 4.0 Template</title>
+    <title>Riverside Art Center | Home</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
-    <link rel="stylesheet" href="css/bootstrap.min.css">                                     
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+
+    <!-- Existing Bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
-    <body>
-       
-        <div class="header">
-            <div class="container-fluid">
-                <div class="header-inner">
-                    <a href="#" class="navbar-brand site-name">Classic</a>
-                    
-                    <nav class="navbar main-nav">
+<body>
 
-                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
-                            &#9776;
-                        </button>
-                        
-                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item active">
-                                    <a href="index.html" class="nav-link">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog.html" class="nav-link">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
-                                </li>
-                            </ul>                        
-                        </div>
-                        
-                    </nav>  
+    <!-- HEADER: LOGO AND NAVIGATION -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header-inner">
 
-                </div>                                  
-            </div>            
+                <!-- CHANGE LOGO IMAGE HERE -->
+                <a href="index.html" class="logo-link">
+                    <img src="img/rac-logo-placeholder.png"
+                         alt="Riverside Art Center Logo"
+                         class="rac-logo">
+                </a>
+
+                <!-- WEBSITE NAVIGATION -->
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="artist.html" class="nav-link">Artist</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="events.html" class="nav-link">Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
         </div>
+    </header>
 
-        <div class="home-img-container">
-            <img src="img/home-img.jpg" alt="Image" class="hidden-lg-up img-fluid">
-        </div>
 
-        <section class="section">
+    <!-- KOI FISH BANNER IMAGE -->
+    <!-- CHANGE BANNER IMAGE HERE -->
+    <section class="koi-banner">
+        <img src="img/koi-fish-banner.jpg"
+             alt="Beautiful koi fish swimming in water"
+             class="banner-image">
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- MISSION STATEMENT -->
+        <section class="mission-section">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
-                        <h2 class="gold-text title">Introduction</h2>
-                        <p class="subtitle">Suspendisse ut magna vel velit cursus tempor ut nec nunc. Mauris vehicula, augue in tincidunt porta, purus ipsum blandit massa.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
-                        <div class="content-box">
-                            <img src="img/img-310x180-1.jpg" alt="Image" class="margin-b-20 img-fluid">
-                            <h4 class="margin-b-20 gold-text">Lorem ipsum dolor #1</h4>
-                            <p class="margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a href="#" class="btn text-uppercase">Detail</a>    
-                        </div>  
+                <h2 class="section-heading">Mission Statement</h2>
 
-                    </div>
+                <p class="mission-text">
+                    The Riverside Art Center (RAC) is a non-profit arts
+                    corporation dedicated to the promotion of fine art.
+                    RAC serves the greater Wapakoneta area, providing art
+                    related, educational opportunities through classes,
+                    lectures and demonstrations. RAC also provides a venue
+                    for local artists to work, display and sell their artwork.
+                    The RAC provides these opportunities for all persons,
+                    regardless of age, social status, gender/gender
+                    orientation, politics, religious affiliation.
+                </p>
 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="content-box">
-                            <img src="img/img-310x180-2.jpg" alt="Image" class="margin-b-20 img-fluid">
-                            <h4 class="margin-b-20 gold-text">Lorem ipsum dolor #2</h4>
-                            <p class="margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a href="#" class="btn text-uppercase">Read More</a>    
-                        </div>  
-
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="content-box">
-                            <img src="img/img-310x180-3.jpg" alt="Image" class="margin-b-20 img-fluid">
-                            <h4 class="margin-b-20 gold-text">Lorem ipsum dolor #3</h4>
-                            <p class="margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a href="#" class="btn text-uppercase">Detail</a>    
-                        </div>  
-
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="content-box">
-                            <img src="img/img-310x180-4.jpg" alt="Image" class="margin-b-20 img-fluid">
-                            <h4 class="margin-b-20 gold-text">Lorem ipsum dolor #4</h4>
-                            <p class="margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a href="#" class="btn text-uppercase">Read More</a>    
-                        </div>  
-
-                    </div>
-				</div>
-
-                <div class="row margin-t-big">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <div class="2-col-left">
-                            
-                            <h3 class="gold-text title">Pellentesque fermentum mauris et posuere</h3>
-                            <p class="margin-b-30">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
-                            <img src="img/img-660x330-1.jpg" alt="Image" class="margin-b-40 img-fluid">
-                            <p>
-                                Donec tempor lobortis tortor, in feugiat massa facilisis sed. Ut dignissim viverra pretium. In eu justo maximus turpis feugiat finibus scelerisque nec eros. Cras nec lectus tempor nibh vestibulum eleifend et ac elit.
-                            </p>
-                            <p>Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id. Fusce sagittis ultricies felis, non luctus mauris lacinia quis.</p>
-                            <p class="m-b-2"> Ut fringilla lacus ac tempor ullamcorper. Mauris iaculis placerat ex et mattis. Mauris id vulputate lectus, id fermentum sapien.
-                            </p>
-                            <a href="#" class="btn text-uppercase">Read More</a>
-
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-
-                        <div class="2-col-right">
-
-                            <div class="2-rows-md-swap">
-                                <div class="overflow-auto row 2-rows-md-down-2">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                        <h3 class="gold-text title">
-                                            Categories
-                                        </h3>
-                                        <nav>
-                                            <ul class="nav">
-                                                <li><a href="#" class="text-link">Tincidunt non faucibus placerat</a></li>
-                                                <li><a href="#" class="text-link">Vestibulum tempor ac lectus</a></li>
-                                                <li><a href="#" class="text-link">Fusce non turpis euismod</a></li>
-                                                <li><a href="#" class="text-link">Nam in augue consectetur</a></li>
-                                                <li><a href="#" class="text-link">Text Link Color #006699</a></li>
-                                            </ul>
-                                        </nav>    
-                                    </div> <!-- col -->
-
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xs-m-t">
-                                        <h3 class="gold-text title">
-                                            Useful Links
-                                        </h3>
-                                        <nav>
-                                            <ul class="nav">
-                                                <li><a href="#" class="text-link">Suspendisse sed dui nulla</a></li>
-                                                <li><a href="#" class="text-link">Lorem ipsum dolor sit</a></li>
-                                                <li><a href="#" class="text-link">Duiss nec purus et eros</a></li>
-                                                <li><a href="#" class="text-link">Etiam pulvinar et ligula sed</a></li>
-                                                <li><a href="#" class="text-link">Proin egestas eu felis et iaculis</a></li>
-                                            </ul>
-                                        </nav>    
-                                    </div> 
-                                </div>                        
-                                
-                                <div class="row 2-rows-md-down-1 margin-t-mid">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <h3 class="gold-text title margin-b-30">Related Posts</h3>
-                                        <div class="media related-post">
-                                          <div class="media-left media-middle">
-                                            <a href="#">
-                                              <img class="media-object" src="img/img-240x120-1.jpg" alt="Generic placeholder image">
-                                            </a>
-                                          </div>
-                                          <div class="media-body">
-                                            <a href="#"><h4 class="media-heading gold-text margin-b-15">Lorem ipsum dolor</h4></a>
-                                            <p class="small-font media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                          </div>
-                                        </div>
-                                        <div class="media related-post">
-                                          <div class="media-left media-middle">
-                                            <a href="#">
-                                              <img class="media-object" src="img/img-240x120-2.jpg" alt="Generic placeholder image">
-                                            </a>
-                                          </div>
-                                          <div class="media-body">
-                                            <a href="#"><h4 class="media-heading gold-text margin-b-15">Lorem ipsum dolor</h4></a>
-                                            <p class="small-font media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                          </div>
-                                        </div>
-                                        <div class="media related-post">
-                                          <div class="media-left media-middle">
-                                            <a href="#">
-                                              <img class="media-object" src="img/img-240x120-3.jpg" alt="Generic placeholder image">
-                                            </a>
-                                          </div>
-                                          <div class="media-body">
-                                            <a href="#"><h4 class="media-heading gold-text margin-b-15">Lorem ipsum dolor</h4></a>
-                                            <p class="small-font media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </div>
-
-                        </div>
-                        
-                    </div>
-                </div> 
+                <!-- CHANGE COMMUNITY PHOTO HERE -->
+                <img src="img/rac-community-people.jpg"
+                     alt="People participating in art activities at Riverside Art Center"
+                     class="mission-image">
 
             </div>
         </section>
-        
-        <footer class="footer">
+
+
+        <!-- CLASSES, EVENTS, EXHIBITS AND MEMBERSHIP -->
+        <section class="features-section">
             <div class="container-fluid">
-                <div class="row">
-                    
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        
-                        <div class="footer-content-box">
-                            <h3 class="gold-text title footer-content-box-title">Proin eu posuere felis</h3>
-                            <div class="gray-bg">
-                                <p>Classic is free HTML CSS website template provided by templatemo for everyone. Feel free to use it.</p>
-                                <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                <p><strong>Danny Egg (Executive)</strong></p>    
-                            </div>    
+
+                <h2 class="section-heading">Explore Riverside Art Center</h2>
+
+                <p class="features-intro">
+                    Discover opportunities to create, connect, and
+                    experience art in our community.
+                </p>
+
+                <div class="features-grid">
+
+                    <!-- CLASSES BOX -->
+                    <article class="content-box">
+
+                        <!-- CHANGE CLASSES IMAGE HERE -->
+                        <img src="img/classes-placeholder.jpg"
+                             alt="Art supplies and painting materials"
+                             class="feature-image">
+
+                        <div class="content-box-text">
+                            <h3>Classes</h3>
+
+                            <p>
+                                Watercolor, Journaling, Stain Glass and
+                                Canvas painting are just a few of the
+                                classes you can experience at the
+                                Riverside Art Center.
+                            </p>
+
+                            <a href="classes.html" class="btn read-more">
+                                Read More
+                            </a>
                         </div>
-                                                
-                    </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        <div class="footer-content-box footer-links-container">
-                        
-                            <h3 class="gold-text title footer-content-box-title">Nulla tortor dolor</h3>
-                            <nav>
-                                <ul class="nav">
-                                    <li><a href="#" class="footer-link">Tincidunt non faucibus</a></li>
-                                    <li><a href="#" class="footer-link">Vestibulum tempor</a></li>
-                                    <li><a href="#" class="footer-link">Fusce non turpis euismod</a></li>
-                                    <li><a href="#" class="footer-link">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" class="footer-link">Nam in augue consectetur</a></li>
-                                    <li><a href="#" class="footer-link">Text Link Color #CCCC66</a></li>
-                                </ul>
-                            </nav>
+                    </article>
 
+
+                    <!-- EVENTS BOX -->
+                    <article class="content-box">
+
+                        <!-- CHANGE EVENTS IMAGE HERE -->
+                        <img src="img/events-placeholder.jpg"
+                             alt="Artists and visitors at an art event"
+                             class="feature-image">
+
+                        <div class="content-box-text">
+                            <h3>Events</h3>
+
+                            <p>
+                                Numerous events are held every year at
+                                the Riverside Art Center. Meet and greet
+                                with artists, fine art, book author
+                                events and artist receptions.
+                            </p>
+
+                            <a href="events.html" class="btn read-more">
+                                Read More
+                            </a>
                         </div>
-                        
-                    </div>
 
-                    <div class="clearfix hidden-lg-up"></div>
+                    </article>
 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
-                        <div class="footer-content-box">
-                        
-                            <h3 class="gold-text title footer-content-box-title">Etiam mollis ornare</h3>
-                            <p class="margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="margin-b-30">
-                            <p class="margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="margin-b-30">
-                            <p class="margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                            <a href="#" class="btn btn-gray text-uppercase">Read More</a>
+                    <!-- EXHIBITS BOX -->
+                    <article class="content-box">
 
+                        <!-- CHANGE EXHIBITS IMAGE HERE -->
+                        <img src="img/exhibits-placeholder.jpg"
+                             alt="Artwork displayed in an art gallery"
+                             class="feature-image">
+
+                        <div class="content-box-text">
+                            <h3>Exhibits</h3>
+
+                            <p>
+                                Exhibits from local artists, members of
+                                the Riverside Art Center and students
+                                at local schools are held throughout
+                                the year.
+                            </p>
+
+                            <a href="exhibits.html" class="btn read-more">
+                                Read More
+                            </a>
                         </div>
-                        
-                    </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    </article>
 
-                        <div class="footer-content-box">
-                        
-                            <h3 class="gold-text title footer-content-box-title">Fusce non turpis</h3>
-                            <div class="margin-b-30">
-                                <img src="img/img-100x100-1.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-2.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-3.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-4.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-5.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-6.jpg" alt="Image" class="footer-thumbnail">
-                            </div>
-                            <p class="margin-b-20">Curabitur dui massa, aliquam quis mi sed, tempor vulputate tellus. Sed vestibulum non neque.</p>
-                            <a href="#" class="btn btn-gray text-uppercase">Browse</a>
 
+                    <!-- MEMBERSHIP BOX -->
+                    <article class="content-box">
+
+                        <!-- CHANGE MEMBERSHIP IMAGE HERE -->
+                        <img src="img/membership-placeholder.jpg"
+                             alt="Artist creating and displaying original artwork"
+                             class="feature-image">
+
+                        <div class="content-box-text">
+                            <h3>Membership</h3>
+
+                            <p>
+                                Are you an artist? Do you have self-made
+                                pieces of artwork around your house you
+                                want to show to the world? Become a
+                                member and showcase your art today!
+                            </p>
+
+                            <a href="membership.html" class="btn read-more">
+                                Read More
+                            </a>
                         </div>
-                        
-                    </div>
 
+                    </article>
 
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-12 copyright-col">
-                        <p class="copyright-text">Copyright 2016 Your Company Name</p>
-                    </div>
                 </div>
             </div>
-        </footer>
+        </section>
+
+    </main>
 
 
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> 
-        <script src="js/bootstrap.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container-fluid">
+
+            <div class="footer-grid">
+
+                <!-- HOURS -->
+                <div class="footer-column">
+
+                    <h3>Hours</h3>
+
+                    <p>
+                        <strong>Wednesday - Friday</strong><br>
+                        12:00 PM - 4:00 PM
+                    </p>
+
+                    <p>
+                        <strong>Saturday</strong><br>
+                        10:00 AM - 2:00 PM
+                    </p>
+
+                </div>
+
+
+                <!-- TELEPHONE -->
+                <div class="footer-column">
+
+                    <h3>Telephone</h3>
+
+                    <p>
+                        <a href="tel:4197382352">
+                            419-738-2352
+                        </a>
+                    </p>
+
+                    <h3 class="footer-subheading">Email</h3>
+
+                    <p>
+                        <a href="mailto:riversideartcenter@gmail.com">
+                            riversideartcenter@gmail.com
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <!-- ADDRESS -->
+                <div class="footer-column">
+
+                    <h3>Address</h3>
+
+                    <p>
+                        Riverside Art Center<br>
+                        3 W. Auglaize St.<br>
+                        P.O. Box 37<br>
+                        Wapakoneta, OH 45895
+                    </p>
+
+                </div>
+
+
+                <!-- SOCIAL MEDIA -->
+                <div class="footer-column social-column">
+
+                    <h3>Let's Connect</h3>
+
+                    <p>Connect with us!</p>
+
+                    <div class="social-icons">
+
+                        <!-- CHANGE FACEBOOK ICON IMAGE HERE -->
+                        <a href="https://www.facebook.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Visit Riverside Art Center on Facebook">
+
+                            <img src="img/facebook-icon.png"
+                                 alt="Facebook"
+                                 class="social-icon">
+                        </a>
+
+
+                        <!-- CHANGE INSTAGRAM ICON IMAGE HERE -->
+                        <a href="https://www.instagram.com/riversideartcenterwapak/?hl=en"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Visit Riverside Art Center on Instagram">
+
+                            <img src="img/instagram-icon.png"
+                                 alt="Instagram"
+                                 class="social-icon">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COPYRIGHT -->
+            <div class="copyright-col">
+                <p class="copyright-text">
+                    © 2026 Riverside Art Center. All Rights Reserved.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- EXISTING TEMPLATE SCRIPTS -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
        
 </body>
 </html>
