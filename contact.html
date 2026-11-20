@@ -1,207 +1,268 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riverside Art Center | Contact</title>
 
-    <title>Classic - Contact Page</title>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
-    <link rel="stylesheet" href="css/bootstrap.min.css">                                     
-    <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-    <body>
-       
-        <div class="header">
-            <div class="container-fluid">
-                <div class="header-inner">
-                    <a href="#" class="navbar-brand site-name">Classic</a>
-                    
+<body>
 
-                    <nav class="navbar main-nav">
+    <!-- HEADER AND NAVIGATION -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header-inner">
 
-                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
-                            &#9776;
-                        </button>
-                        
-                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item">
-                                    <a href="index.html" class="nav-link">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog.html" class="nav-link">Blog</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a href="contact.html" class="nav-link">Contact</a>
-                                </li>
-                            </ul>                        
-                        </div>
-                        
-                    </nav>  
+                <a href="index.html" class="logo-link">
+                    <img src="logooo.png" alt="Riverside Art Center logo" class="rac-logo">
+                </a>
 
-                </div>                                  
-            </div>            
-        </div>
+                <nav class="navbar main-nav" aria-label="Main navigation">
+                    <button class="navbar-toggler hidden-md-up"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#tmNavbar"
+                            aria-label="Toggle navigation">
+                        &#9776;
+                    </button>
 
-        <div class="contact-img-container">
-            
-        </div>
-
-        <section class="section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-
-                        <section>
-                            <h3 class="gold-text form-title">Pellentesque fermentum mauris</h3>
-                            <p class="form-description">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien. Quisque vel sem eu turpis ullamcorper euismod. Praesent quis nisi ac augue luctus viverra. Sed et dui nisi. Fusce vitae dapibus justo.</p> 
-
-
-                            <form action="index.html" method="post" class="contact-form">                                
-                                <div class="form-group">
-                                    <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
-                                </div>
-                                <div class="form-group">
-                                    <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Message" required></textarea>
-                                </div>
-                            
-                                <button type="submit" class="btn">Submit</button>                          
-                            </form>   
-                        </section>
-                        
-                        <section class="margin-t-mid map-section">
-                            <h3 class="gold-text form-title">Pellentesque fermentum mauris</h3>
-
-                            <div id="google-map"></div>
-
-                            <p class="form-description">Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id.</p>
-
-                            <p class="m-b-0">Donec mattis ipsum in erat viverra commodo. 
-                                Proin sapien lacus, euismod eget nisl in, 
-                                elementum posuere massa. Curabitur a odio
-                                eros. Cras aliquam lectus erat, non semper est
-                                volutpat eget. Ut eget erat tincidunt.</p>
-
-                            <a href="#" class="btn margin-t-small">Detail</a> 
-                        </section>                        
-                 
-
+                    <div class="collapse navbar-toggleable-sm" id="tmNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="artist.html" class="nav-link">Artist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-link">Events</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="contact.html" class="nav-link" aria-current="page">Contact</a>
+                            </li>
+                        </ul>
                     </div>
+                </nav>
 
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 contact-right">
-                        
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <div class="aside-container">
-                                    <h3 class="gold-text title">
-                                        Categories
-                                    </h3>
-                                    <nav>
-                                        <ul class="nav">
-                                            <li><a href="#" class="text-link">Lorem ipsum dolor sit</a></li>
-                                            <li><a href="#" class="text-link">Tincidunt non faucibus placerat</a></li>
-                                            <li><a href="#" class="text-link">Vestibulum tempor ac lectus</a></li>
-                                            <li><a href="#" class="text-link">Elementum egestas dui</a></li>
-                                            <li><a href="#" class="text-link">Nam in augue consectetur</a></li>
-                                            <li><a href="#" class="text-link">Text Link Color #006699</a></li>
-                                        </ul>
-                                    </nav>
-                                    <hr class="margin-t-small">   
-                                    <h3 class="gold-text title margin-t-small">
-                                        Useful Links
-                                    </h3>
-                                    <nav>   
-                                        <ul class="nav">
-                                            <li><a href="#" class="text-link">Suspendisse sed dui nulla</a></li>
-                                            <li><a href="#" class="text-link">Lorem ipsum dolor sit</a></li>
-                                            <li><a href="#" class="text-link">Duiss nec purus et eros</a></li>
-                                            <li><a href="#" class="text-link">Etiam pulvinar et ligula sed</a></li>
-                                            <li><a href="#" class="text-link">Proin egestas eu felis et iaculis</a></li>
-                                            <li><a href="#" class="text-link">Fusce non turpis euismod</a></li>
-                                        </ul>
-                                    </nav>      
-                                </div>
-                                 
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO IMAGE -->
+    <section class="koi-banner">
+        <img src="home2.jpg" alt="Decorative koi fish swimming among water lilies" class="banner-image">
+    </section>
+
+    <main>
+
+        <!-- CONTACT INTRODUCTION -->
+        <section class="contact-intro-section">
+            <div class="container-fluid">
+                <div class="contact-intro-box">
+                    <p>
+                        We’d love to hear from you! Whether you have questions about
+                        upcoming exhibitions, want to sign up for a local art class,
+                        or are looking for ways to support the arts in Ohio, our team
+                        at Riverside Art Center is here to help. Reach out using the
+                        form below, give us a call, or stop by the gallery during open
+                        hours—we look forward to connecting with you and welcoming
+                        you into our creative community.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form-section">
+            <div class="container-fluid">
+
+                <div class="contact-section-heading">
+                    <h1>Get in Touch</h1>
+                    <p>Have a question or want to learn more? Send us a message!</p>
+                </div>
+
+                <div class="contact-form-card">
+                    <form action="#" method="post" class="rac-contact-form">
+
+                        <div class="contact-form-row">
+                            <div class="contact-field">
+                                <label for="contact_name">Your Name</label>
+                                <input
+                                    type="text"
+                                    id="contact_name"
+                                    name="contact_name"
+                                    placeholder="Enter your name"
+                                    required>
                             </div>
 
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                
-                                <div class="content-box content-box-contact">
-                                    <img src="img/img-310x180-1.jpg" alt="Image" class="margin-b-20 img-fluid">
-                                    <h4 class="margin-b-20 gold-text">Lorem ipsum dolor #1</h4>
-                                    <p class="margin-b-20 p-small">Aenean cursus tellus mauris, quis
-                                    consequat mauris dapibus id. Donec
-                                    scelerisque porttitor pharetra</p>
-                                    <a href="#" class="btn text-uppercase">Detail</a>    
-                                </div> 
-
-                                <div class="content-box margin-t-mid content-box-contact">
-                                    <img src="img/img-310x180-2.jpg" alt="Image" class="margin-b-20 img-fluid">
-                                    <h4 class="margin-b-20 gold-text">Lorem ipsum dolor #2</h4>
-                                    <p class="margin-b-20 p-small">Aenean cursus tellus mauris, quis
-                                    consequat mauris dapibus id. Donec
-                                    scelerisque porttitor pharetra</p>
-                                    <a href="#" class="btn text-uppercase">Read More</a>    
-                                </div>  
-
+                            <div class="contact-field">
+                                <label for="contact_email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="contact_email"
+                                    name="contact_email"
+                                    placeholder="Enter your email"
+                                    required>
                             </div>
                         </div>
-                        <hr class="margin-t-mid">
-                        <div class="row contact-row-related-posts">
-                            <div class="col-xs-12">
-                                
-                                <div class="contact-related-posts-container">
-                                    <h3 class="gold-text title margin-b-30">Related Posts</h3>
-                                    <div class="media related-post">
-                                      <div class="media-left media-middle">
-                                        <a href="#">
-                                          <img class="media-object" src="img/img-240x120-1.jpg" alt="Generic placeholder image">
-                                        </a>
-                                      </div>
-                                      <div class="media-body">
-                                        <a href="#"><h4 class="media-heading gold-text margin-b-15">Lorem ipsum dolor</h4></a>
-                                        <p class="small-font media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                      </div>
-                                    </div>
-                                    <div class="media related-post">
-                                      <div class="media-left media-middle">
-                                        <a href="#">
-                                          <img class="media-object" src="img/img-240x120-2.jpg" alt="Generic placeholder image">
-                                        </a>
-                                      </div>
-                                      <div class="media-body">
-                                        <a href="#"><h4 class="media-heading gold-text margin-b-15">Lorem ipsum dolor</h4></a>
-                                        <p class="small-font media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                      </div>
-                                    </div>
-                                    <div class="media related-post">
-                                      <div class="media-left media-middle">
-                                        <a href="#">
-                                          <img class="media-object" src="img/img-240x120-3.jpg" alt="Generic placeholder image">
-                                        </a>
-                                      </div>
-                                      <div class="media-body">
-                                        <a href="#"><h4 class="media-heading gold-text margin-b-15">Lorem ipsum dolor</h4></a>
-                                        <p class="small-font media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                      </div>
-                                    </div>
-                                </div>                                
 
-                            </div>
+                        <div class="contact-field">
+                            <label for="contact_subject">Subject</label>
+                            <select id="contact_subject" name="contact_subject" required>
+                                <option value="" disabled selected>Select a topic</option>
+                                <option value="Upcoming Exhibitions">Upcoming Exhibitions</option>
+                                <option value="Art Classes">Art Classes</option>
+                                <option value="Membership">Membership</option>
+                                <option value="Volunteering">Volunteering</option>
+                                <option value="General Question">General Question</option>
+                            </select>
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact_message">Your Message</label>
+                            <textarea
+                                id="contact_message"
+                                name="contact_message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="contact-submit-button">
+                            Send Message
+                        </button>
+
+                    </form>
+                </div>
+
+                <div class="contact-details">
+                    <p><strong>Prefer to reach us directly?</strong></p>
+                    <p>
+                        Call us at <a href="tel:4197382352">419-738-2352</a>
+                        or email
+                        <a href="mailto:riversideartcenter@gmail.com">
+                            riversideartcenter@gmail.com
+                        </a>.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROUD MEMBER SECTION -->
+        <section class="proud-member-section">
+            <div class="container-fluid">
+
+                <div class="membership-heading">
+                    <h2>A Proud Member</h2>
+                    <p>
+                        Riverside Art Center is proud to be part of a community
+                        that supports creativity, culture, and the arts.
+                    </p>
+                </div>
+
+                <div class="proud-member-image-wrap">
+                    <!-- Replace this filename with your actual image -->
+                    <img
+                        src="proud-member.jpg"
+                        alt="Riverside Art Center membership or community organization logo"
+                        class="proud-member-image">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MEMBERSHIP SECTION -->
+        <section class="rac-membership-section">
+            <div class="container-fluid">
+
+                <div class="membership-heading">
+                    <h2>Membership</h2>
+                    <p>
+                        Your support helps Riverside Art Center continue bringing
+                        art, education, and creative opportunities to our community.
+                    </p>
+                </div>
+
+                <div class="membership-flyer-wrap">
+                    <img
+                        src="https://static.wixstatic.com/media/e0328a_8a396897f641497583049ea43894656c~mv2.jpg/v1/fill/w_789,h_610,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2025Newracmembershipdrive2025flyerwithapp.jpg"
+                        alt="Riverside Art Center 2025 membership drive flyer"
+                        class="membership-flyer">
+                </div>
+
+                <!-- VOLUNTEER BOARD MEMBERS -->
+                <div class="board-members-section">
+                    <h2>Volunteer Board Members</h2>
+
+                    <div class="board-members-grid">
+
+                        <div class="board-member">
+                            <span class="board-role">President</span>
+                            <strong>Jerry Knoch</strong>
+                            <a href="mailto:docknoch@gmail.com">docknoch@gmail.com</a>
+                        </div>
+
+                        <div class="board-member">
+                            <span class="board-role">Vice President</span>
+                            <strong>Mike Heft</strong>
+                            <a href="mailto:meheft@matrixti.com">meheft@matrixti.com</a>
+                        </div>
+
+                        <div class="board-member">
+                            <span class="board-role">Secretary</span>
+                            <strong>Tom Schlenker</strong>
+                            <a href="mailto:tpchlen@bright.net">tpchlen@bright.net</a>
+                        </div>
+
+                        <div class="board-member">
+                            <span class="board-role">Treasurer</span>
+                            <strong>Sheena Behr</strong>
+                            <a href="mailto:sbehr@adavisins.com">sbehr@adavisins.com</a>
+                        </div>
+
+                        <div class="board-member">
+                            <span class="board-role">Artist Liaison</span>
+                            <strong>Deb Fischer</strong>
+                            <a href="mailto:deb.fischer5755@gmail.com">
+                                deb.fischer5755@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="board-member">
+                            <span class="board-role">Gallery Director</span>
+                            <strong>Deb Fischer</strong>
+                        </div>
+
+                        <div class="board-member">
+                            <span class="board-role">Gallery Assistant</span>
+                            <strong>Sara Pescosolido</strong>
+                            <a href="mailto:riversideartcenter@gmail.com">
+                                riversideartcenter@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="board-member">
+                            <span class="board-role">Trustee</span>
+                            <strong>Amy Yoder</strong>
+                            <a href="mailto:amyyoder1014@gmail.com">
+                                amyyoder1014@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="board-member">
+                            <span class="board-role">Trustee</span>
+                            <strong>Brad Heckathorn</strong>
+                            <a href="mailto:brad.heckathorn@gmail.com">
+                                brad.heckathorn@gmail.com
+                            </a>
                         </div>
 
                     </div>
@@ -209,137 +270,84 @@
 
             </div>
         </section>
-        
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        
-                        <div class="footer-content-box">
-                            <h3 class="gold-text title footer-content-box-title">Proin eu posuere felis</h3>
-                            <div class="gray-bg">
-                                <p>You can download, modify and use Classic HTML CSS template from templatemo.com website.</p>
-                                <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                <p><strong>Danny Egg (Executive)</strong></p>    
-                            </div>    
-                        </div>
-                                                
-                    </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        <div class="footer-content-box footer-links-container">
-                        
-                            <h3 class="gold-text title footer-content-box-title">Nulla tortor dolor</h3>
-                            <nav>
-                                <ul class="nav">
-                                    <li><a href="#" class="footer-link">Tincidunt non faucibus</a></li>
-                                    <li><a href="#" class="footer-link">Vestibulum tempor</a></li>
-                                    <li><a href="#" class="footer-link">Fusce non turpis euismod</a></li>
-                                    <li><a href="#" class="footer-link">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" class="footer-link">Nam in augue consectetur</a></li>
-                                    <li><a href="#" class="footer-link">Text Link Color #CCCC66</a></li>
-                                </ul>
-                            </nav>
+    </main>
 
-                        </div>
-                        
-                    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid">
 
-                    <div class="clearfix hidden-lg-up"></div>
+            <div class="footer-grid">
 
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="footer-content-box">
-                        
-                            <h3 class="gold-text title footer-content-box-title">Etiam mollis ornare</h3>
-                            <p class="margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="margin-b-30">
-                            <p class="margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="margin-b-30">
-                            <p class="margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                            <a href="#" class="btn btn-gray text-uppercase">Read More</a>
-
-                        </div>
-                        
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="footer-content-box">
-                        
-                            <h3 class="gold-text title footer-content-box-title">Fusce non turpis</h3>
-                            <div class="margin-b-30">
-                                <img src="img/img-100x100-1.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-2.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-3.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-4.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-5.jpg" alt="Image" class="footer-thumbnail">
-                                <img src="img/img-100x100-6.jpg" alt="Image" class="footer-thumbnail">
-                            </div>
-                            <p class="margin-b-20">Curabitur dui massa, aliquam quis mi sed, tempor vulputate tellus. Sed vestibulum non neque.</p>
-                            <a href="#" class="btn btn-gray text-uppercase">Browse</a>
-
-                        </div>
-                        
-                    </div>
-
-
+                <div class="footer-column">
+                    <h3>Visit Us</h3>
+                    <p>
+                        Riverside Art Center<br>
+                        3 W. Auglaize St.<br>
+                        P.O. Box 37<br>
+                        Wapakoneta, OH 45895
+                    </p>
                 </div>
 
-                <div class="row">
-                    <div class="col-xs-12 copyright-col">
-                        <p class="copyright-text">Copyright 2016 Your Company Name</p>
+                <div class="footer-column">
+                    <h3>Gallery Hours</h3>
+                    <p>
+                        Wednesday–Friday<br>
+                        12:00 PM–4:00 PM
+                    </p>
+                    <p>
+                        Saturday<br>
+                        10:00 AM–2:00 PM
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>
+                        <a href="tel:4197382352">419-738-2352</a>
+                    </p>
+                    <p>
+                        <a href="mailto:riversideartcenter@gmail.com">
+                            riversideartcenter@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="facebook.jpeg" alt="Facebook">
+                        </a>
+
+                        <a href="https://www.instagram.com/riversideartcenterwapak/?hl=en"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="instagram.jpeg" alt="Instagram">
+                        </a>
                     </div>
                 </div>
+
             </div>
-        </footer>
 
+            <div class="copyright-col">
+                <p class="copyright-text">
+                    © 2026 Riverside Art Center. All Rights Reserved.
+                </p>
+            </div>
 
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>  
-        <script src="js/bootstrap.min.js"></script>
-        <script>     
-       
+        </div>
+    </footer>
 
-            var map = '';
-            var center;
+    <!-- SCRIPTS -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-            function initialize() {
-                var mapOptions = {
-                    zoom: 16,
-                    center: new google.maps.LatLng(13.758468,100.567481),
-                    scrollwheel: false
-                };
-            
-                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
-
-                google.maps.event.addDomListener(map, 'idle', function() {
-                  calculateCenter();
-                });
-            
-                google.maps.event.addDomListener(window, 'resize', function() {
-                  map.setCenter(center);
-                });
-            }
-
-            function calculateCenter() {
-                center = map.getCenter();
-            }
-
-            function loadGoogleMap(){
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-                document.body.appendChild(script);
-            }
-        
- 
-            $(function() {
-
-
-                loadGoogleMap();
-            });
-
-        </script>             
+</body>
+</html>
 
 </body>
 </html>
