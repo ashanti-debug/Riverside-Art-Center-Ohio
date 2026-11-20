@@ -838,13 +838,3 @@ footer {
     .artist-artwork img {
         height: 240px;
     }
-}
-/* FIX ARTIST COMMUNITY IMAGE SIZE */
-main .artist-intro-section img.artist-community-image {
-    display: block !important;
-    width: 75% !important;
-    max-width: 650px !important;
-    height: 200px !important;
-    object-fit: cover;
-    margin: 0 auto !important;
-}
