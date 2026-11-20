@@ -1092,3 +1092,354 @@ footer {
     }
 
 }
+
+/* ========================================
+   CONTACT PAGE
+======================================== */
+
+/* CONTACT INTRODUCTION */
+.contact-intro-section {
+    padding: 35px 4%;
+    background-color: var(--white);
+}
+
+.contact-intro-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 35px;
+    background-color: var(--pink-light);
+    border: 1px solid var(--pink);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(65, 65, 65, 0.07);
+}
+
+.contact-intro-box p {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* CONTACT FORM SECTION */
+.contact-form-section {
+    padding: 35px 5% 55px;
+    background-color: var(--white);
+}
+
+.contact-section-heading,
+.membership-heading {
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 850px;
+}
+
+.contact-section-heading h1,
+.membership-heading h2 {
+    color: var(--sage-dark);
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.contact-section-heading p,
+.membership-heading p {
+    color: var(--text-dark);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.contact-form-card {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 38px 45px;
+    background-color: #FBF7F7;
+    border: 1px solid var(--pink);
+    border-radius: 18px;
+    box-shadow: 0 7px 22px rgba(65, 65, 65, 0.10);
+}
+
+.rac-contact-form {
+    width: 100%;
+}
+
+.contact-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.contact-field label {
+    margin-bottom: 9px;
+    color: var(--text-dark);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #D7D7D7;
+    border-radius: 9px;
+    background-color: var(--white);
+    color: var(--text-dark);
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-field input,
+.contact-field select {
+    min-height: 50px;
+}
+
+.contact-field textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+    outline: none;
+    border-color: var(--sage-dark);
+    box-shadow: 0 0 0 3px rgba(151, 161, 59, 0.15);
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+    color: #999999;
+}
+
+.contact-submit-button {
+    display: block;
+    min-width: 190px;
+    margin: 8px auto 0;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--pink);
+    color: var(--text-dark);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-submit-button:hover {
+    background-color: var(--sage-light);
+    transform: translateY(-2px);
+}
+
+.contact-details {
+    margin: 28px auto 0;
+    text-align: center;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+.contact-details p {
+    margin-bottom: 7px;
+}
+
+.contact-details a {
+    color: var(--sage-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+
+/* PROUD MEMBER SECTION */
+.proud-member-section {
+    padding: 45px 5% 55px;
+    background-color: var(--blue-light);
+}
+
+.proud-member-section .membership-heading {
+    margin-bottom: 22px;
+}
+
+.proud-member-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    min-height: 140px;
+    margin: 0 auto;
+    padding: 18px;
+    background-color: var(--white);
+    border: 1px solid rgba(65, 65, 65, 0.12);
+    border-radius: 14px;
+}
+
+.proud-member-image {
+    display: block;
+    width: 100%;
+    max-width: 580px;
+    max-height: 190px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* MEMBERSHIP SECTION */
+.rac-membership-section {
+    padding: 55px 5% 65px;
+    background-color: var(--white);
+}
+
+.membership-flyer-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto 55px;
+    padding: 22px;
+    background-color: #FBF7F7;
+    border: 1px solid var(--pink);
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(65, 65, 65, 0.08);
+}
+
+.membership-flyer {
+    display: block;
+    width: 100%;
+    max-width: 789px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+/* VOLUNTEER BOARD MEMBERS */
+.board-members-section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.board-members-section h2 {
+    margin-bottom: 30px;
+    color: var(--sage-dark);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.board-members-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.board-member {
+    display: flex;
+    flex-direction: column;
+    min-height: 135px;
+    padding: 22px;
+    background-color: var(--pink-light);
+    border: 1px solid rgba(224, 163, 187, 0.65);
+    border-radius: 13px;
+    text-align: center;
+    justify-content: center;
+}
+
+.board-role {
+    margin-bottom: 7px;
+    color: var(--sage-dark);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.board-member strong {
+    margin-bottom: 6px;
+    color: var(--text-dark);
+    font-size: 17px;
+}
+
+.board-member a {
+    color: #806078;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+}
+
+.board-member a:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVE CONTACT PAGE */
+@media (max-width: 900px) {
+    .board-members-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-form-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-intro-section {
+        padding: 25px 4%;
+    }
+
+    .contact-intro-box {
+        padding: 22px 18px;
+    }
+
+    .contact-intro-box p {
+        font-size: 15px;
+    }
+
+    .contact-form-section,
+    .rac-membership-section,
+    .proud-member-section {
+        padding: 35px 5%;
+    }
+
+    .contact-section-heading h1,
+    .membership-heading h2 {
+        font-size: 27px;
+    }
+
+    .contact-form-card {
+        padding: 24px 19px;
+    }
+
+    .contact-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .board-members-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-flyer-wrap {
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+
+    .board-members-section h2 {
+        font-size: 24px;
+    }
+}
